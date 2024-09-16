@@ -3,7 +3,7 @@
     "path": "~/Modules/MA22004private/investigations/sampling-candy/sampling-candy.qmd",
     "project_path": null,
     "type": "quarto_markdown",
-    "hash": "2261087606",
+    "hash": "2084115073",
     "contents": "",
     "dirty": false,
     "created": 1726519835165.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "64,0",
-        "scrollLine": "55"
+        "cursorPosition": "148,99",
+        "scrollLine": "138"
     },
     "folds": "",
-    "lastKnownWriteTime": 1726521631,
+    "lastKnownWriteTime": 1726521810,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1726521631352,
+    "last_content_update": 1726521810093,
     "read_only": false,
     "read_only_alternatives": []
 }

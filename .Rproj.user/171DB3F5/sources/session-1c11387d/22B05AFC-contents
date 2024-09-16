@@ -89,7 +89,7 @@ subsamp |>
 - Center related to mean: $\bar{x} =$ `r signif(mean(subsamp$weight), digits = 4)`
 - Variance of the estimates, $s^{2} =$ `r format(signif(sd(subsamp$weight)**2, digits = 6), scientific = FALSE)`, shows spread
 
-## Bias (true value)
+## Bias (true value) {.smaller}
 
 ```{r}
 #| echo: true
@@ -118,7 +118,7 @@ $|\mu - \bar{x}| =$ `r signif(abs(true$weight - mean(subsamp$weight)), digits = 
 
 ## Random sampling
 
-- What are some strategies for taking a sample of size 5 from 100 candy?
+What are some strategies for taking a sample of size 5 from 100 pieces of candy?
 
 ## Hypotheticals
 
@@ -146,5 +146,4 @@ estd |>
   theme(text=element_text(size=20))
 ```
 
-- Sample variance $s^2 =$ `r format(signif(sd(estd$weight)**2, digits = 6), scientific = FALSE)`
-- Bias $|\mu - \bar{x}| =$ `r signif(abs(true$weight - mean(estd$weight)), digits = 4)`
+- Sample variance $s^2 =$ `r format(signif(sd(estd$weight)**2, digits = 6), scientific = FALSE)`; bias $|\mu - \bar{x}| =$ `r signif(abs(true$weight - mean(estd$weight)), digits = 4)`
