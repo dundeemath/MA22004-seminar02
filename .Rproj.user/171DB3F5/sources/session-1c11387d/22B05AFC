@@ -1,26 +1,26 @@
 {
-    "id": "2462361D",
-    "path": "~/Modules/MA22004-seminar01/_quarto.yml",
+    "id": "22B05AFC",
+    "path": "~/Modules/MA22004private/investigations/sampling-candy/sampling-candy.qmd",
     "project_path": null,
-    "type": "yaml",
-    "hash": "0",
+    "type": "quarto_markdown",
+    "hash": "2261087606",
     "contents": "",
     "dirty": false,
-    "created": 1726517738428.0,
+    "created": 1726519835165.0,
     "source_on_save": false,
     "relative_order": 3,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "12,0",
-        "scrollLine": "10"
+        "cursorPosition": "64,0",
+        "scrollLine": "55"
     },
     "folds": "",
-    "lastKnownWriteTime": 1726519055,
+    "lastKnownWriteTime": 1726521631,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1726519055269,
+    "last_content_update": 1726521631352,
     "read_only": false,
     "read_only_alternatives": []
 }

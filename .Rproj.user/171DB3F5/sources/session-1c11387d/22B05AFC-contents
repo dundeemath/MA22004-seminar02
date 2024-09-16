@@ -1,0 +1,150 @@
+---
+title: "Candy Sampling"
+subtitle: "MA22004"
+date: "2024-09-25"
+author: "Dr Eric Hall   •   ehall001@dundee.ac.uk"
+format: revealjs
+---
+
+```{r}
+knitr::opts_chunk$set(echo = FALSE, comment = "", fig.asp = .4)
+library(tidyverse)
+library(latex2exp)
+library(knitr)
+library(kableExtra)
+library(janitor)
+library(fontawesome)
+library(latex2exp)
+library(readxl)
+
+options(width = 90, knitr.kable.NA = '', "kableExtra.html.bsTable" = T)
+
+true <- read_excel("weight_true.xlsx")
+estd <- read_excel("weight_estimated.xlsx")
+estd$pair <- factor(estd$pair)
+
+m <- 10
+set.seed(12)
+subsamp <- estd |> slice_sample(n = m)
+xrange <- c(true$weight-100, max(estd$weight)+100)
+```
+
+
+## Candy Sampling {.smaller}
+
+:::: {.columns}
+::: {.column width="50%"}
+The bag contains 100 pieces of candy.
+
+1. Divide into pairs.
+2. Estimate the total weight of candy:
+    - select a representative sample of 5 pieces, 
+    - weigh the candy, 
+    - multiply the weight by 20.
+3. Record your estimate (quietly).
+5. Return the sample to the bag, shake bag, pass to next pair.
+
+**Do not weight the whole bag!**
+:::
+
+::: {.column width="50%"}
+![](images/scale.png){width=100% fig-alt="Scale with five pieces of candy."}
+:::
+::::
+
+
+
+## *Your* estimated weight data
+
+Full data set
+```{r}
+#| echo: true
+glimpse(estd)
+```
+
+\
+A subsample
+```{r}
+#| echo: true
+glimpse(subsamp)
+```
+
+## Sampling distribution for weight {.smaller}
+
+```{r}
+#| echo: true
+#| warning: false
+#| message: false
+#| code-fold: true
+subsamp |>
+  ggplot(aes(x = weight)) + geom_histogram(bins = 5) +
+  labs(x = "Weight (g)",
+       y = "Count",
+       caption = paste0('n = ', m)) + 
+  xlim(xrange) +
+  theme_classic() + 
+  theme(text=element_text(size=20))
+```
+
+- Center related to mean: $\bar{x} =$ `r signif(mean(subsamp$weight), digits = 4)`
+- Variance of the estimates, $s^{2} =$ `r format(signif(sd(subsamp$weight)**2, digits = 6), scientific = FALSE)`, shows spread
+
+## Bias (true value)
+
+```{r}
+#| echo: true
+#| warning: false
+#| message: false
+#| code-fold: true
+subsamp |>
+  ggplot(aes(x = weight)) + geom_histogram(bins = 5) +
+  geom_vline(aes(xintercept = true$weight), color = 'red') +
+  labs(x = "Weight (g)",
+       y = "Count",
+       caption = paste0('n = ', m)) + 
+  xlim(xrange) +
+  theme_classic() + 
+  theme(text=element_text(size=20))
+```
+
+Sampling distribution for estimated weight also contains a **large bias**: 
+$|\mu - \bar{x}| =$ `r signif(abs(true$weight - mean(subsamp$weight)), digits = 4)`
+
+## Why did this happen?
+
+## Larger candies are more accessible and are therefore **oversampled** {.mySegue .center}
+
+
+
+## Random sampling
+
+- What are some strategies for taking a sample of size 5 from 100 candy?
+
+## Hypotheticals
+
+How might bias and variance of estimated total weights change if we: 
+
+(a) switchted to a random sampling approach?
+(b) increased the sample size from 5 to 10 or 20?
+
+## Increasing $n$ decreases variation {.smaller}
+
+```{r}
+#| echo: true
+#| warning: false
+#| message: false
+#| code-fold: true
+n <- length(estd$weight)
+estd |> 
+  ggplot(aes(x = weight, fill = weight)) + geom_histogram(bins = 5) +
+  geom_vline(aes(xintercept = true$weight), color = 'red') +
+  labs(x = "Weight (g)",
+       y = "Count",
+       caption = paste0('n = ', n)) + 
+  xlim(xrange) +
+  theme_classic() + 
+  theme(text=element_text(size=20))
+```
+
+- Sample variance $s^2 =$ `r format(signif(sd(estd$weight)**2, digits = 6), scientific = FALSE)`
+- Bias $|\mu - \bar{x}| =$ `r signif(abs(true$weight - mean(estd$weight)), digits = 4)`

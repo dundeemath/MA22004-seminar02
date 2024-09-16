@@ -3,7 +3,7 @@
     "path": "~/Modules/MA22004-seminar02/seminar02.qmd",
     "project_path": "seminar02.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "1535143025",
     "contents": "",
     "dirty": false,
     "created": 1726514930766.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "147,0",
-        "scrollLine": "145"
+        "cursorPosition": "16,31",
+        "scrollLine": "5"
     },
     "folds": "",
-    "lastKnownWriteTime": 1726517862,
+    "lastKnownWriteTime": 1726521638,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1726517862932,
+    "last_content_update": 1726521638052,
     "read_only": false,
     "read_only_alternatives": []
 }
