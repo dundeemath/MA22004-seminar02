@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "seminar02.html#attendance",
+    "href": "seminar02.html#attendance",
+    "title": "Seminar 02",
+    "section": "Attendance",
+    "text": "Attendance"
+  },
+  {
+    "objectID": "seminar02.html#reminders",
+    "href": "seminar02.html#reminders",
+    "title": "Seminar 02",
+    "section": "Reminders",
+    "text": "Reminders\n\nThu workshop cancelled.\nLab 1 due next Fri 2024-10-04 at 17:00."
+  },
+  {
+    "objectID": "seminar02.html#overview-of-next-few-weeks",
+    "href": "seminar02.html#overview-of-next-few-weeks",
+    "title": "Seminar 02",
+    "section": "Overview of next few weeks…",
+    "text": "Overview of next few weeks…\nIn this module we will look at three tools for drawing conclusions about the characteristics of a population from data:\n\npoint estimation\nconfidence intervals\nhypothesis testing\n\nOver next two seminars we will consider these concepts in general (to familiarize with language, notation, etc). Then we will focus on inferences in specific contexts."
+  },
+  {
+    "objectID": "seminar02.html#goals-for-today",
+    "href": "seminar02.html#goals-for-today",
+    "title": "Seminar 02",
+    "section": "Goals for today",
+    "text": "Goals for today\nLet’s answer the questions:\n\nWhat are statistics?\nWhat are sampling distributions?\nWhat are point estimates?\n\n\n\n\n\n\n\nExperiential learning opportunity\n\n\nCandy sampling"
+  },
+  {
+    "objectID": "seminar02.html#candy-sampling",
+    "href": "seminar02.html#candy-sampling",
+    "title": "Seminar 02",
+    "section": "Candy Sampling",
+    "text": "Candy Sampling\n\n\nThe bag contains 100 pieces of candy.\n\nDivide into pairs.\nEstimate the total weight of candy:\n\nselect a representative sample of 5 pieces,\nweigh the candy,\nmultiply the weight by 20.\n\nRecord your estimate (quietly).\nReturn the sample to the bag, shake bag, pass to next pair.\n\nDo not weight the whole bag!"
+  },
+  {
+    "objectID": "seminar02.html#statistics",
+    "href": "seminar02.html#statistics",
+    "title": "Seminar 02",
+    "section": "Statistics",
+    "text": "Statistics\nA statistic is a quantity that can be calculated from sample data.\nPrior to obtaining data, a statistic is an unknown quantity and is therefore a random variable (rv).\n\n\nLet’s look at some examples."
+  },
+  {
+    "objectID": "seminar02.html#examples-of-statistics",
+    "href": "seminar02.html#examples-of-statistics",
+    "title": "Seminar 02",
+    "section": "Examples of statistics",
+    "text": "Examples of statistics\nViewed as estimators for characteristics of the population.\n\nsample mean, \\overline{X} = \\frac{1}{m} \\sum_{i=1}^m X_i\nsample variance, S^2 = \\frac{1}{m-1} \\sum_{i=1}^m (X_i - \\overline{X})^2\navg of extreme lengths, \\widetilde{X} = \\frac{\\min_{i\\geq 0}(X_i) + \\max_{i\\geq 0}(X_i)}{2}\n\n\n\n\n\n\n\nRandom variables have distributions\n\n\nAny function of rvs X_i is also a rv and, therefore, has a probability distribution."
+  },
+  {
+    "objectID": "seminar02.html#sampling-distributions",
+    "href": "seminar02.html#sampling-distributions",
+    "title": "Seminar 02",
+    "section": "Sampling distributions",
+    "text": "Sampling distributions\nWe refer to the probability distribution for a statistic as a sampling distribution to emphasize how the distribution will vary across all possible sample data."
+  },
+  {
+    "objectID": "seminar02.html#a-point-estimator",
+    "href": "seminar02.html#a-point-estimator",
+    "title": "Seminar 02",
+    "section": "A point estimator",
+    "text": "A point estimator\nConsider iid X_1, X_2, \\dots, X_m \\sim F(\\theta).\nA point estimator \\widehat{\\theta}_m of \\theta is obtained by selecting a suitable statistic g, \n  \\widehat{\\theta}_m = g(X_1, \\dots, X_m) \\,.\n\n\n\nConsider rvs X_i \\sim F(\\theta) (general distribution)\nRecall \\theta a fixed, unknown quantity\nNOTE X_i ARE RVS! not observations (data points)"
+  },
+  {
+    "objectID": "seminar02.html#closing-the-deal-point-estimate",
+    "href": "seminar02.html#closing-the-deal-point-estimate",
+    "title": "Seminar 02",
+    "section": "Closing the deal: point estimate",
+    "text": "Closing the deal: point estimate\nA point estimate of a parameter \\theta is a single number that we regard as a sensible value for \\theta.\nA point estimate \\widehat{\\theta}_m is computed from an estimator using sample data.\n\n\n\n\n\n\nOverloaded notation\n\n\nThe symbol \\widehat{\\theta}_m is typically used to denote both the estimator and the point estimate resulting from a given sample.\n\n\n\n\n\nLikewise, we refer to statistics: used for both the estimator and the estimate.\nWriting \\widehat{\\theta} = 42 does not indicate how the point estimate was obtained; therefore, it is essential to report both the estimator and the resulting point estimate.\nIn addition, we should also report a measure of precision in our estimate."
+  },
+  {
+    "objectID": "seminar02.html#how-uncertain-is-our-point-estimate",
+    "href": "seminar02.html#how-uncertain-is-our-point-estimate",
+    "title": "Seminar 02",
+    "section": "How uncertain is our point estimate?",
+    "text": "How uncertain is our point estimate?\nThe standard error is one measure of the precision of an estimate.\nThe standard error of an estimator \\widehat{\\theta} is the standard deviation: \n  \\sigma_{\\widehat{\\theta}} = \\sqrt{\\mathop{\\mathrm{Var}}(\\widehat{\\theta})}\\,.\n\nThe estimated standard error is denoted by \\widehat{\\sigma}_{\\widehat{\\theta}} or simply s_{\\widehat{\\theta}}.\n\n\nOften, the standard error depends on unknown parameters and must also be estimated.\nStandard error is sometimes denoted \\mathsf{se} = \\mathsf{se}(\\widehat{\\theta}) and the estimated standard error by \\widehat{\\mathsf{se}}."
+  },
+  {
+    "objectID": "seminar02.html#summary",
+    "href": "seminar02.html#summary",
+    "title": "Seminar 02",
+    "section": "Summary",
+    "text": "Summary\nToday we discussed: point estimation.\nWe engaged in an activity about the importance of representative sampling, sampling distributions, sampling bias, and sampling variation.\n\n\n\n\n\n\nToday’s materials\n\n\nSlides posted to https://dundeemath.github.io/MA22004-seminar02.\nActivity data and analysis posted to MyDundee."
+  }
+]
