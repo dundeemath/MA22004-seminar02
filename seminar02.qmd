@@ -1,8 +1,8 @@
 ---
 title: "Seminar 02"
-subtitle: "MA22004"
-date: "2024-09-25"
-author: "Dr Eric Hall   •   ehall001@dundee.ac.uk"
+subtitle: "MA22004/MA52008"
+date: "2026-01-26"
+author: "Dr John McDermott   •   jzmcdermott@dundee.ac.uk"
 format: 
   revealjs:
     chalkboard: true
@@ -49,8 +49,8 @@ library(latex2exp)
 
 ## Reminders 
 
-- Thu workshop cancelled.
-- Lab 1 due next **Fri 2024-10-04** at **17:00**. 
+- Thu workshop on Thursday moves venue - see the timetable
+- Lab 1 due at end of week 3 (we are in week 2!)
 
 
 ## Overview of next few weeks...
@@ -61,7 +61,7 @@ In this module we will look at three tools for drawing conclusions about the cha
 -  confidence intervals
 -  hypothesis testing
 
-Over next two seminars we will consider these concepts in general (to familiarize with language, notation, etc). Then we will focus on inferences in specific contexts. 
+Over the next two seminars we will consider these concepts in general (to familiarize ourselves with language, notation, etc). Then we will focus on inferences in specific contexts. 
 
 ## Goals for today
 
@@ -83,7 +83,7 @@ Candy sampling
 
 :::: {.columns}
 ::: {.column width="50%"}
-The bag contains 100 pieces of candy.
+The box contains 100 pieces of candy.
 
 1. Divide into pairs.
 2. Estimate the total weight of candy:
@@ -91,9 +91,9 @@ The bag contains 100 pieces of candy.
     - weigh the candy, 
     - multiply the weight by 20.
 3. Record your estimate (quietly).
-5. Return the sample to the bag, shake bag, pass to next pair.
+5. Return the sample to the box, shake box, pass to next pair.
 
-**Do not weight the whole bag!**
+**Do not weigh the whole box!**
 :::
 
 ::: {.column width="50%"}
