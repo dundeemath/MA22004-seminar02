@@ -11,14 +11,14 @@
     "href": "seminar02.html#reminders",
     "title": "Seminar 02",
     "section": "Reminders",
-    "text": "Reminders\n\nThu workshop cancelled.\nLab 1 due next Fri 2024-10-04 at 17:00."
+    "text": "Reminders\n\nThu workshop on Thursday moves venue - see the timetable\nLab 1 due at end of week 3 (we are in week 2!)"
   },
   {
     "objectID": "seminar02.html#overview-of-next-few-weeks",
     "href": "seminar02.html#overview-of-next-few-weeks",
     "title": "Seminar 02",
     "section": "Overview of next few weeks…",
-    "text": "Overview of next few weeks…\nIn this module we will look at three tools for drawing conclusions about the characteristics of a population from data:\n\npoint estimation\nconfidence intervals\nhypothesis testing\n\nOver next two seminars we will consider these concepts in general (to familiarize with language, notation, etc). Then we will focus on inferences in specific contexts."
+    "text": "Overview of next few weeks…\nIn this module we will look at three tools for drawing conclusions about the characteristics of a population from data:\n\npoint estimation\nconfidence intervals\nhypothesis testing\n\nOver the next two seminars we will consider these concepts in general (to familiarize ourselves with language, notation, etc). Then we will focus on inferences in specific contexts."
   },
   {
     "objectID": "seminar02.html#goals-for-today",
@@ -32,7 +32,7 @@
     "href": "seminar02.html#candy-sampling",
     "title": "Seminar 02",
     "section": "Candy Sampling",
-    "text": "Candy Sampling\n\n\nThe bag contains 100 pieces of candy.\n\nDivide into pairs.\nEstimate the total weight of candy:\n\nselect a representative sample of 5 pieces,\nweigh the candy,\nmultiply the weight by 20.\n\nRecord your estimate (quietly).\nReturn the sample to the bag, shake bag, pass to next pair.\n\nDo not weight the whole bag!"
+    "text": "Candy Sampling\n\n\nThe box contains 100 pieces of candy.\n\nDivide into pairs.\nEstimate the total weight of candy:\n\nselect a representative sample of 5 pieces,\nweigh the candy,\nmultiply the weight by 20.\n\nRecord your estimate (quietly).\nReturn the sample to the box, shake box, pass to next pair.\n\nDo not weigh the whole box!"
   },
   {
     "objectID": "seminar02.html#statistics",
